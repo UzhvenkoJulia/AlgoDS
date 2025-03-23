@@ -22,7 +22,7 @@ class CustomStack:
 
     def back(self):
         if self.size() != 0:
-            return self._items[-1]  # # повертає останній елемент з стека (який зараз знаходиться на вершині)
+            return self._items[-1]  # повертає останній елемент з стека (який зараз знаходиться на вершині)
         else:
             return 'error'
 
@@ -37,7 +37,7 @@ class CustomStack:
     def exit():
         return 'bye'
 
-    def handle_command(self, command):  # # динамічний виклик методів через getattr()
+    def handle_command(self, command):  # динамічний виклик методів через getattr()
         parts = command.split()
         method = parts[0]  # перший елемент списку
         args = parts[1:]  # зріз списку, щоб отримати всі елементи після першого
