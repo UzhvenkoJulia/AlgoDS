@@ -5,7 +5,7 @@
 
 INF = 10**9  
 
-def getWay(matrix, start, end):
+def way(matrix, start, end):
 
     n = len(matrix)
 
@@ -47,4 +47,4 @@ for _ in range(n):
     row = list(map(int, input().split()))
     matrix.append(row)
 
-print(getWay(matrix, s, f))
+print(way(matrix, s, f))
